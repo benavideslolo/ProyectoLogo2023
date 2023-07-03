@@ -1,0 +1,8 @@
+Usuario: admin
+Contraseña: 12345
+Fecha y hora: 28/02/22 - 12:02:40
+__________________________________
+Usuario: admin
+Contraseña: 12345
+Fecha y hora: 20/03/22 - 12:25:15
+__________________________________
