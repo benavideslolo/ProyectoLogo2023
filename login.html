@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar - Optica Holandesa</title>
+    <link rel="stylesheet" href="css/stylelogin.css">
+    <link rel="icon" href="img/icono.ico">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <div id="loader"></div>
+
+    <div id="paginalogin" class="pagina">
+        <div>
+            <div id="container">
+                <header>
+                    <nav class="navbar">
+                    </nav>
+
+                    <a href="0indexnormal.html"><img src="img/logo.png" width="300" height="100"></a>
+                </header>
+                <br>
+                <form id="login-form" action="php/procesaForm.php" method="post">
+                    <center>
+                        <h1 class="typing-animation">Iniciar sesión</h1>
+                    </center>
+                    <hr class="hr-login">
+                    <br>
+
+                    <label class="label-iniciasesion">Correo Electronico</label>
+                    <input type="email" name="correoE" placeholder="Ingresa tu correo electronico" required>
+                    <label class="label-iniciasesion">Contraseña</label>
+                    <input type="password" name="contraseña" placeholder="Ingresa tu contraseña" required>
+                    <center> <input id="submitButton" type="submit" name="numero" placeholder="Inicia Sesión"
+                            value="18"></center>
+                    <!--<center><button type="submit">Iniciar sesión</button></center>-->
+
+                    <br>
+                    <hr class="hr-login">
+                    <p class="label-iniciasesion">¿No tienes cuenta? <a href="#" onclick="inicio()"><label>¡Regístrate
+                                aquí!</label></a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="paginaregistro" class="pagina">
+        <div>
+            <div>
+                <div id="container">
+
+                    <form action="php/procesaForm.php" method="post" id="registro-form">
+                        <center><a href="0indexnormal.html"><img src="img/logo.png" width="300" height="100"></a>
+                        </center>
+                        <center>
+                            <h1 class="typing-animation">Regístrate gratis</h1>
+                        </center>
+                        <hr class="hr-login">
+                        <label for="cedula">Cedula</label>
+                        <input type="text" id="cedula" name="cedula" placeholder="¿Cuál es tu cedula?" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="correoE" placeholder="¿Cuál es tu email?" required>
+                        <label for="name">Nombre</label>
+                        <input type="text" id="username" name="nombre" placeholder="¿Cuál es tu nombre?" required>
+                        <label for="surname">Apellido</label>
+                        <input type="text" id="surname" name="apellido" placeholder="¿Cuál es tu apellido?" required>
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="contraseña" placeholder="¿Qué contraseña deseas?"
+                            required>
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="¿Cuál es tu numero de telefono?"
+                            required>
+                        <label for="direccion">Direccion</label>
+                        <input type="text" id="direccion" name="direccion" placeholder="¿Cuál es tu direccion?"
+                            required>
+                        <center><input type="submit" name="numero" value="REGISTRARME" id="myButton"></center>
+                        <br>
+                        <hr class="hr-login">
+                        <p>¿Ya tienes cuenta? <a href="#" onclick="registro()"><label>¡Inicia sesión!</label></a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var loader = document.getElementById('loader');
+        var paginalogin = document.getElementById('paginalogin');
+        var paginaregistro = document.getElementById('paginaregistro');
+
+        function inicio() {
+            loader.style.animation = 'circleIn 1.5s';
+            setTimeout(function () {
+                paginalogin.style.display = 'none';
+                paginaregistro.style.display = 'block';
+                loader.style.animation = 'circleOut 1s';
+            }, 1300)
+        }
+
+        function registro() {
+            loader.style.animation = 'circleIn 1.5s';
+            setTimeout(function () {
+                paginalogin.style.display = 'block';
+                paginaregistro.style.display = 'none';
+                loader.style.animation = 'circleOut 1s';
+            }, 1300)
+        }
+    </script>
+</body>
+
+</html>
