@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="img/icono.ico">
+    <meta name="author" content="CodePixar">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="UTF-8">
+    <title>Carrito - Óptica Holandesa</title>
+
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="css/tienda/bootstrap.css">
+    <link rel="stylesheet" href="css/tienda/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- BARRA DE ARRIBA -->
+	<header class="header_area sticky-header">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light main_box">
+				<div class="container">
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<div class="menu-toggle">
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
+							</div>
+							<ul class="menu">
+								&nbsp;
+								<center>
+									<div class="circulo">
+										<i class="fas fa-user"></i>
+									</div>
+									<br>
+									<li><a href="cuenta.html" class="active">Editar Perfil</a></li>
+									<li><a href="0indexnormal.html" class="botoncambio2">Cerrar sesion</a></li>
+									<!--<li><a href="#" class="botoncambio2" value="CERRAR SESION">Cerrar sesion</a></li>-->
+								</center>
+								<br>
+								<hr>
+								<br>
+								<li><a href="#">Tienda Online</a></li>
+								<li><a href="#">Contacto</a></li>
+								<li><a href="#" class="botoncambio">Cambiar al Ingles</a></li>
+								<br>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- (CIERRE) BARRA DE ARRIBA -->
+
+	<!-- FONDO DE ARRIBA -->
+	<section class="banner-area organic-breadcrumb">
+		<div class="container">
+			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+				<div class="col-first">
+					<h1>Carrito</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- (CIERRE) FONDO DE ARRIBA -->
+
+    <!-- CARRITO -->
+    <section class="cart_area">
+        <div class="container">
+            <div class="cart_inner">
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <div class="media">
+                                        <div class="d-flex">
+                                            <img src="img/carrito1.jpg" alt="">
+                                        </div>
+                                        <div class="media-body">
+                                            <p>Lente de Receta Miraflex Mike 1 (Azul)</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$3,900.00</h5>
+                                </td>
+                                <td>
+                                    <div class="product_count">
+                                        <input type="text" name="qty" id="sst" maxlength="12" value="1" title="Quantity:"
+                                            class="input-text qty">
+                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst )) result.value++;return false;"
+                                            class="increase items-count" type="button"><i class="lnr lnr-chevron-up"></i></button>
+                                        <button onclick="var result = document.getElementById('sst'); var sst = result.value; if( !isNaN( sst ) &amp;&amp; sst > 0 ) result.value--;return false;"
+                                            class="reduced items-count" type="button"><i class="lnr lnr-chevron-down"></i></button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <h5>$3,900.00</h5>
+                                </td>
+                            </tr>
+                            <tr class="bottom_button">
+                                <td>
+                                    <a class="gray_btn" href="#">Actualizar carrito</a>
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <h5>Subtotal</h5>
+                                </td>
+                                <td>
+                                    <h5>$3,900.00</h5>
+                                </td>
+                            </tr>
+                            <tr class="out_button_area">
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <div class="checkout_btn_inner d-flex align-items-center">
+                                        <a class="gray_btn" href="category.html">Continuar comprando</a>
+                                        <a class="primary-btn" href="#">Finalizar compra</a>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- (CIERRE) CARRITO -->
+
+    <!-- CONTACTO ABAJO DEL TODO -->
+	<footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<img src="img/logo blanco.png" width="90%">
+					&nbsp;
+					&nbsp;
+					<br>
+					<p>Nos especializamos en mejorar la calidad de tu visión </p>
+					<br>
+				</div>
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<center>
+							<h6>¡Síguenos en redes sociales!</h6>
+							<h1><a href="https://www.facebook.com/people/%C3%92ptica-Holandesa/100063803432800/"
+									target="_blank"><i class="fa-brands fa-square-facebook fa-bounce"
+										style="color: #ffffff;"></i></a>
+								<a href="https://www.instagram.com/opticaholandesa/" target="_blank"><i
+										class="fa-brands fa-square-instagram fa-bounce" style="color: #ffffff;"></i></a>
+							</h1>
+						</center>
+					</div>
+				</div>
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<div class="single-footer-widget mail-chimp">
+						<center>
+							<h6>Aceptamos todas las tarjetas de crédito</h6>
+							&nbsp;
+							<h1>
+								<i class="fa-brands fa-cc-visa fa-beat" style="color: #ffffff;"></i> <i
+									class="fa-brands fa-cc-mastercard fa-beat" style="color: #ffffff;"></i> <i
+									class="fab fa-cc-amex fa-beat" style="color: #ffffff;"></i>
+							</h1>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
+				<p class="footer-text m-0">
+					Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!-- (CIERRE) CONTACTO ABAJO DEL TODO -->
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

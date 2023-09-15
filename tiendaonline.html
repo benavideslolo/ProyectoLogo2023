@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="img/icono.ico">
+	<meta name="author" content="CodePixar">
+
+	<meta charset="UTF-8">
+	<title>Tienda Online - Óptica Holandesa</title>
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<link rel="stylesheet" href="css/tienda/font-awesome.min.css">
+	<link rel="stylesheet" href="css/tienda/themify-icons.css">
+	<link rel="stylesheet" href="css/tienda/bootstrap.css">
+	<link rel="stylesheet" href="css/tienda/owl.carousel.css">
+	<link rel="stylesheet" href="css/tienda/nice-select.css">
+	<link rel="stylesheet" href="css/tienda/nouislider.min.css">
+	<link rel="stylesheet" href="css/tienda/ion.rangeSlider.css" />
+	<link rel="stylesheet" href="css/tienda/ion.rangeSlider.skinFlat.css" />
+	<link rel="stylesheet" href="css/tienda/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body id="tiendaonline">
+
+	<!-- BARRA DE ARRIBA -->
+	<header class="header_area sticky-header">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light main_box">
+				<div class="container">
+					<a class="navbar-brand logo_h" href="indexmenu.html"><img src="img/logo.png" alt=""></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav ml-auto">
+							<div class="menu-toggle">
+								<div class="line"></div>
+								<div class="line"></div>
+								<div class="line"></div>
+							</div>
+							<ul class="menu">
+								&nbsp;
+								<center>
+									<div class="circulo">
+										<i class="fas fa-user"></i>
+									</div>
+									<br>
+									<li><a href="cuenta.html" class="active">Editar Perfil</a></li>
+									<li><a href="0indexnormal.html" class="botoncambio2">Cerrar sesion</a></li>
+									<!--<li><a href="#" class="botoncambio2" value="CERRAR SESION">Cerrar sesion</a></li>-->
+								</center>
+								<br>
+								<hr>
+								<br>
+								<li><a href="#">Tienda Online</a></li>
+								<li><a href="#">Contacto</a></li>
+								<li><a href="#" class="botoncambio">Cambiar al Ingles</a></li>
+								<br>
+							</ul>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!-- (CIERRE) BARRA DE ARRIBA -->
+
+	<!-- FONDO DE ARRIBA -->
+	<section class="banner-area organic-breadcrumb">
+		<div class="container">
+			<div class="breadcrumb-banner d-flex flex-wrap align-items-center justify-content-end">
+				<div class="col-first">
+					<h1>Tienda Online</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- (CIERRE) FONDO DE ARRIBA -->
+	<br> <br>
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-3 col-lg-4 col-md-5">
+				<div class="sidebar-categories">
+					<div class="head">Explorar categorías</div>
+					<ul class="main-categories">
+						<li class="main-nav-list"><a href="#">Armani<span class="number">(4)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Boston<span class="number">(2)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Hombre<span class="number">(4)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Lentes de receta<span class="number">(38)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Lentes de sol<span class="number">(5)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Miraflex<span class="number">(3)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Mujer<span class="number">(34)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Ned<span class="number">(2)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Netherlands<span class="number">(1)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Niño<span class="number">(3)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Ralph<span class="number">(9)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Sin categorizar<span class="number">(1)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Unisex<span class="number">(5)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">Vogue<span class="number">(6)</span></a>
+						</li>
+						<li class="main-nav-list"><a href="#">YC<span class="number">(16)</span></a>
+						</li>
+					</ul>
+				</div>
+				<div class="sidebar-filter mt-50">
+					<div class="top-filter-head">Filtrar por precio</div>
+					<div class="common-filter">
+						<div class="head">Precio</div>
+						<div class="price-range-area">
+							<div id="price-range"></div>
+							<div class="value-wrapper d-flex">
+								<div class="price">Precio:</div>
+								<span>$</span>
+								<div id="lower-value"></div>
+								<div class="to">-</div>
+								<span>$</span>
+								<div id="upper-value"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-xl-9 col-lg-8 col-md-7">
+				<!-- SECTORES DEL 1 AL 6 -->
+				<div class="filter-bar d-flex flex-wrap align-items-center">
+					<div class="pagination">
+						<a href="#" class="prev-arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+						<a href="#" class="active">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#" class="dot-dot"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+						<a href="#">6</a>
+						<a href="#" class="next-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<!-- (CIERRE) SECTORES DEL 1 AL 6 -->
+
+				<!-- SECTOR DE PRODUCTOS -->
+				<section class="lattest-product-area pb-40 category-list">
+					<div class="row">
+						<!-- PRODUCTO 1 -->
+						<div class="col-lg-4 col-md-6">
+							<div class="single-product">
+								<img class="img-fluid" src="img/producto1.jpg" alt="">
+								<div class="product-details">
+									<h6>Lente de Receta Miraflex Mike 1 (Azul)</h6>
+									<div class="price">
+										<h6>$3,900.00</h6>
+									</div>
+									<div class="prd-bottom">
+										<a href="producto1.html" class="social-info">
+											<i class="fa-solid fa-bag-shopping"></i>
+											<p class="hover-text">Producto</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- PRODUCTO 2 -->
+						<div class="col-lg-4 col-md-6">
+							<div class="single-product">
+								<img class="img-fluid" src="img/producto2.jpg" alt="">
+								<div class="product-details">
+									<h6>Lente de Receta NED 28006</h6>
+									<div class="price">
+										<h6>$3,400.00</h6>
+									</div>
+									<div class="prd-bottom">
+										<a href="" class="social-info">
+											<i class="fa-solid fa-bag-shopping"></i>
+											<p class="hover-text">Producto</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- PRODUCTO 3 -->
+						<div class="col-lg-4 col-md-6">
+							<div class="single-product">
+								<img class="img-fluid" src="img/producto3.jpg" alt="">
+								<div class="product-details">
+									<h6>Lente de Receta Miraflex MSF Mayan</h6>
+									<div class="price">
+										<h6>$3,900.00</h6>
+									</div>
+									<div class="prd-bottom">
+										<a href="" class="social-info">
+											<i class="fa-solid fa-bag-shopping"></i>
+											<p class="hover-text">Producto</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- PRODUCTO 4 -->
+						<div class="col-lg-4 col-md-6">
+							<div class="single-product">
+								<img class="img-fluid" src="img/producto4.jpg" alt="">
+								<div class="product-details">
+									<h6>Lente de Receta YC 21032</h6>
+									<div class="price">
+										<h6>$3,400.00</h6>
+									</div>
+									<div class="prd-bottom">
+										<a href="" class="social-info">
+											<i class="fa-solid fa-bag-shopping"></i>
+											<p class="hover-text">Producto</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- PRODUCTO 5 -->
+						<div class="col-lg-4 col-md-6">
+							<div class="single-product">
+								<img class="img-fluid" src="img/producto5.jpg" alt="">
+								<div class="product-details">
+									<h6>Lente de Sol Ralph RA 5242</h6>
+									<div class="price">
+										<h6>$7,400.00</h6>
+									</div>
+									<div class="prd-bottom">
+										<a href="" class="social-info">
+											<i class="fa-solid fa-bag-shopping"></i>
+											<p class="hover-text">Producto</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- PRODUCTO 6 -->
+						<div class="col-lg-4 col-md-6">
+							<div class="single-product">
+								<img class="img-fluid" src="img/producto6.jpg" alt="">
+								<div class="product-details">
+									<h6>Lente de Sol Vogue vo 2843 s</h6>
+									<div class="price">
+										<h6>$7,400.00</h6>
+									</div>
+									<div class="prd-bottom">
+										<a href="" class="social-info">
+											<i class="fa-solid fa-bag-shopping"></i>
+											<p class="hover-text">Producto</p>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- (CIERRE) SECTOR DE PRODUCTOS -->
+				<!-- SECTORES DEL 1 AL 6 -->
+				<div class="filter-bar d-flex flex-wrap align-items-center">
+					<div class="pagination">
+						<a href="#" class="prev-arrow"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+						<a href="#" class="active">1</a>
+						<a href="#">2</a>
+						<a href="#">3</a>
+						<a href="#" class="dot-dot"><i class="fa fa-ellipsis-h" aria-hidden="true"></i></a>
+						<a href="#">6</a>
+						<a href="#" class="next-arrow"><i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+					</div>
+				</div>
+				<!-- (CIERRE) SECTORES DEL 1 AL 6 -->
+			</div>
+		</div>
+	</div>
+
+	<!-- MAS VENDIDOS -->
+	<section class="related-product-area section_gap">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-6 text-center">
+					<div class="section-title">
+						<h1>¡Nuestros más vendidos!</h1>
+						<p></p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<center>
+					<div class="col-lg-9">
+						<div class="row">
+							<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
+								<div class="single-related-product d-flex">
+									<a href="#"><img src="img/vendidos1.jpg" alt=""></a>
+									<div class="desc">
+										<a href="#" class="title">Lente de Receta YC 21032</a>
+										<div class="price">
+											<h6>$3,400.00</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
+								<div class="single-related-product d-flex">
+									<a href="#"><img src="img/vendidos2.jpg" alt=""></a>
+									<div class="desc">
+										<a href="#" class="title">Lente de Sol Armani Exchange 4076S</a>
+										<div class="price">
+											<h6>$7,400.00</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
+								<div class="single-related-product d-flex">
+									<a href="#"><img src="img/vendidos3.jpg" alt=""></a>
+									<div class="desc">
+										<a href="#" class="title">Lente de Receta ARMANI Exchange AX1031</a>
+										<div class="price">
+											<h6>$7,400.00</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
+								<div class="single-related-product d-flex">
+									<a href="#"><img src="img/vendidos4.jpg" alt=""></a>
+									<div class="desc">
+										<a href="#" class="title">Lente de Receta ARMANI Exchange AX 3029L</a>
+										<div class="price">
+											<h6>$7,400.00</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
+								<div class="single-related-product d-flex">
+									<a href="#"><img src="img/vendidos5.jpg" alt=""></a>
+									<div class="desc">
+										<a href="#" class="title">Lente de Sol Armani Exchange 4072S</a>
+										<div class="price">
+											<h6>$7,400.00</h6>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</center>
+			</div>
+		</div>
+	</section>
+	<!-- (CIERRE) MAS VENDIDOS -->
+
+	<!-- CONTACTO ABAJO DEL TODO -->
+	<footer class="footer-area section_gap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<img src="img/logo blanco.png" width="90%">
+					&nbsp;
+					&nbsp;
+					<br>
+					<p>Nos especializamos en mejorar la calidad de tu visión </p>
+					<br>
+				</div>
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<div class="single-footer-widget">
+						<center>
+							<h6>¡Síguenos en redes sociales!</h6>
+							<h1><a href="https://www.facebook.com/people/%C3%92ptica-Holandesa/100063803432800/"
+									target="_blank"><i class="fa-brands fa-square-facebook fa-bounce"
+										style="color: #ffffff;"></i></a>
+								<a href="https://www.instagram.com/opticaholandesa/" target="_blank"><i
+										class="fa-brands fa-square-instagram fa-bounce" style="color: #ffffff;"></i></a>
+							</h1>
+						</center>
+					</div>
+				</div>
+				<div class="col-lg-4  col-md-6 col-sm-6">
+					<div class="single-footer-widget mail-chimp">
+						<center>
+							<h6>Aceptamos todas las tarjetas de crédito</h6>
+							&nbsp;
+							<h1>
+								<i class="fa-brands fa-cc-visa fa-beat" style="color: #ffffff;"></i> <i
+									class="fa-brands fa-cc-mastercard fa-beat" style="color: #ffffff;"></i> <i
+									class="fab fa-cc-amex fa-beat" style="color: #ffffff;"></i>
+							</h1>
+						</center>
+					</div>
+				</div>
+			</div>
+			<div class="footer-bottom d-flex justify-content-center align-items-center flex-wrap">
+				<p class="footer-text m-0">
+					Copyright &copy;
+					<script>document.write(new Date().getFullYear());</script> All rights reserved
+				</p>
+			</div>
+		</div>
+	</footer>
+	<!-- (CIERRE) CONTACTO ABAJO DEL TODO -->
+
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.nice-select.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/nouislider.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+	
+</body>
+</html>
